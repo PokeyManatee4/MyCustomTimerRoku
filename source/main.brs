@@ -1,6 +1,6 @@
 sub Main()
     if GetInternetStatus() then
-        audioPlayer = CreateObject("roAudioPlayer")
+         audioPlayer = CreateObject("roAudioPlayer")
          port = CreateObject("roMessagePort")
          audioPlayer.SetMessagePort(port)
          song = CreateObject("roAssociativeArray")
@@ -19,11 +19,11 @@ sub Main()
          while(true)
                msg = wait(0, m.port)
                msgType = type(msg)
-             if msgType = "roSGScreenEvent"
-               if msg.isScreenClosed() then return
-           end if
-     end while
-    end sub
+               if msgType = "roSGScreenEvent"
+                    if msg.isScreenClosed() then return
+                      end if
+             end while
+         end sub
 
     elseif GetInternetStatus() then
         print "in showChannelSGScreen"
