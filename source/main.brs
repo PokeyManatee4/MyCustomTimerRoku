@@ -3,7 +3,7 @@ sub Main()
     port = CreateObject("roMessagePort")
     audioPlayer.SetMessagePort(port)
     song = CreateObject("roAssociativeArray")
-    song.url = "assets/audio.mp3"
+    song.url = "https://cdn.glitch.global/ba91731b-e85a-4a68-a4b8-3ec6ae227e4d/audio.mp3"
     audioplayer.addcontent(song)
     audioplayer.setloop(false)
     audioPlayer.play()
