@@ -41,4 +41,4 @@ sub Main()
               if msg.isScreenClosed() then return
           end if
     end while
-   end sub
+  end sub
